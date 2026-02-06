@@ -9,4 +9,3 @@ def get_numbers_ticket(min, max, quantity):
                 list_numbers.append(number)
     list_numbers.sort()
     return list_numbers
-print(get_numbers_ticket(1, 6, 5))
