@@ -7,8 +7,6 @@ def get_numbers_ticket(min, max, quantity):
         if min > 0 and max < 1001 and quantity > 0 and quantity < 1001:
             if number not in list_numbers:
                 list_numbers.append(number)
-        else:
-            return list_numbers
     list_numbers.sort()
     return list_numbers
-print(get_numbers_ticket(1, 100, 5))
+print(get_numbers_ticket(1, 6, 5))
