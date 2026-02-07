@@ -22,12 +22,3 @@ def get_upcoming_birthdays(users):
             })
 
     return upcoming_birthdays
-
-users = [
-    {"name": "John Doe", "birthday": "1985.01.23"},
-    {"name": "Jane Smith", "birthday": "1990.02.11"},
-    {"name": "Alice Brown", "birthday": "1992.02.10"}
-]
-
-upcoming_birthdays = get_upcoming_birthdays(users)
-print("Список привітань на цьому тижні:", upcoming_birthdays)
