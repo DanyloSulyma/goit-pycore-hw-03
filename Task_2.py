@@ -1,11 +1,10 @@
 import random
 
-list_numbers = []
 def get_numbers_ticket(min, max, quantity):
-    if not (1 <= min <= quantity <= max <= 1000):
+    if min < 1 or max > 1000 or min > max:
         return []
-    try:
-        numbers = random.sample(range(min, max + 1), quantity)
-        return sorted(numbers)
-    except ValueError:
+    if quantity > (max - min + 1):
         return []
+
+    numbers = random.sample(range(min, max + 1), quantity)
+    return sorted(numbers)

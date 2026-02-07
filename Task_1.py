@@ -9,4 +9,3 @@ def get_days_from_today(date):
         return delta.days
     except ValueError:
         raise ValueError("Неправильний формат дати. Використовуйте формат 'YYYY-MM-DD'.")
-        return None
