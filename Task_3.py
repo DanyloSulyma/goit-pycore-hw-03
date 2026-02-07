@@ -1,9 +1,8 @@
 import re
 
 def normalize_phone(phone_number):
-    pattern = r"[^\d+]"
-    replacement = ""
-    normalized_number = re.sub(pattern, replacement, phone_number)
+    pattern = r"[^\d]"
+    normalized_number = re.sub(pattern, "", phone_number)
     if normalized_number.startswith("380"):
         normalized_number = "+" + normalized_number
     elif normalized_number.startswith("0"):
